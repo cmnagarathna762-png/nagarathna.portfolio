@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Professional Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Naga<span>rathna</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+            </ul>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="certifications fade-in">
+            <h2 class="section-title">My Certifications</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Click on any certificate to view it in full size. More certificates will be added soon.</p>
+            
+            <div class="cert-grid">
+                <!-- Certificate 1 Placeholder -->
+                <div class="cert-card">
+                    <!-- Currently using a gradient placeholder. Can be replaced with actual image path later -->
+                    <div style="background: linear-gradient(135deg, #cbd5e1, #94a3b8); width: 100%; height: 250px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-certificate" style="font-size: 5rem; color: #fff;"></i>
+                    </div>
+                    <!-- Hidden actual image for modal to pick up. We use the same for now to prevent broken links -->
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18e12b7a9f4%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18e12b7a9f4%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23eeeeee%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22240%22%20y%3D%22318.5%22%3ECertificate%201%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Professional Certification 1" style="display: none;">
+                    <div class="cert-overlay">
+                        <span>View Certificate</span>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 Placeholder -->
+                <div class="cert-card">
+                    <div style="background: linear-gradient(135deg, #cbd5e1, #94a3b8); width: 100%; height: 250px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-certificate" style="font-size: 5rem; color: #fff;"></i>
+                    </div>
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20600%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18e12b7a9f5%20text%20%7B%20fill%3A%23999%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18e12b7a9f5%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%23eeeeee%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22240%22%20y%3D%22318.5%22%3ECertificate%202%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Professional Certification 2" style="display: none;">
+                    <div class="cert-overlay">
+                        <span>View Certificate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Modal -->
+        <div id="certModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption" style="margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px;"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Get In Touch</h3>
+            <p>Ready to collaborate? Send me an email!</p>
+            <div class="social-links">
+                <a href="mailto:contact@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                &copy; 2026 Nagarathna. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
